@@ -3,9 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>logFormatVersion</key>
-	<integer>9</integer>
+	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>7922A549-706D-4563-B593-D2C30EB0F799</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>7922A549-706D-4563-B593-D2C30EB0F799.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>gDraw-cofazgujrgjaahejvvzfgvblwgzf</string>
+			<key>timeStartedRecording</key>
+			<real>607775921.49694204</real>
+			<key>timeStoppedRecording</key>
+			<real>607775923.96358097</real>
+			<key>title</key>
+			<string>Build target gDraw</string>
+			<key>uniqueIdentifier</key>
+			<string>7922A549-706D-4563-B593-D2C30EB0F799</string>
+		</dict>
+	</dict>
 	<key>preserveOldLogs</key>
 	<true/>
 </dict>

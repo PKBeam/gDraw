@@ -12,6 +12,9 @@
 		505E0F8A2158604D00C6D903 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E0F892158604D00C6D903 /* Document.swift */; };
 		505E0F8C2158604F00C6D903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505E0F8B2158604F00C6D903 /* Assets.xcassets */; };
 		505E0F8F2158604F00C6D903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505E0F8D2158604F00C6D903 /* Main.storyboard */; };
+		505E0F982158698D00C6D903 /* ViewDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E0F972158698D00C6D903 /* ViewDraw.swift */; };
+		50C8E394215A529500A7FDC3 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8E393215A529500A7FDC3 /* Geometry.swift */; };
+		50C8E398215A573600A7FDC3 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8E397215A573600A7FDC3 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		505E0F8E2158604F00C6D903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		505E0F902158604F00C6D903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505E0F912158604F00C6D903 /* gDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gDraw.entitlements; sourceTree = "<group>"; };
+		505E0F972158698D00C6D903 /* ViewDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDraw.swift; sourceTree = "<group>"; };
+		50C8E393215A529500A7FDC3 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		50C8E397215A573600A7FDC3 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 		505E0F842158604D00C6D903 /* gDraw */ = {
 			isa = PBXGroup;
 			children = (
+				50C8E397215A573600A7FDC3 /* WindowController.swift */,
 				505E0F852158604D00C6D903 /* AppDelegate.swift */,
 				505E0F872158604D00C6D903 /* ViewController.swift */,
 				505E0F892158604D00C6D903 /* Document.swift */,
 				505E0F8B2158604F00C6D903 /* Assets.xcassets */,
 				505E0F8D2158604F00C6D903 /* Main.storyboard */,
+				505E0F972158698D00C6D903 /* ViewDraw.swift */,
+				50C8E393215A529500A7FDC3 /* Geometry.swift */,
 				505E0F902158604F00C6D903 /* Info.plist */,
 				505E0F912158604F00C6D903 /* gDraw.entitlements */,
 			);
@@ -93,11 +102,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Vincent Liu";
 				TargetAttributes = {
 					505E0F812158604D00C6D903 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -137,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				505E0F882158604D00C6D903 /* ViewController.swift in Sources */,
+				50C8E398215A573600A7FDC3 /* WindowController.swift in Sources */,
 				505E0F862158604D00C6D903 /* AppDelegate.swift in Sources */,
+				505E0F982158698D00C6D903 /* ViewDraw.swift in Sources */,
+				50C8E394215A529500A7FDC3 /* Geometry.swift in Sources */,
 				505E0F8A2158604D00C6D903 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = gDraw/gDraw.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 284SF69W3M;
@@ -286,7 +300,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PKBeam.gDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -295,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = gDraw/gDraw.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 284SF69W3M;
@@ -305,7 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PKBeam.gDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
